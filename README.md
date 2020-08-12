@@ -1,2 +1,18 @@
 # todo-backend
-todo-backend
+
+commands:
+
+> sudo mongod --port 27018
+
+> PORT=3002 npm start
+
+Wir bauen ein Backend für die Todos React App. Wenn du dir unsicher bist was du geneau in den einzelnen Schritten machen musst, dann guck nochmal in die Music Rating Aufgaben 1 und 2.
+
+1. Initialisiere ein neues node Projekt mit npx.
+2. Starte mongodb und füge mit hilfe des Mongo CLI (Command Line Interface) eine neue Datenbank für todos hinzu.
+3. Fülle die Datenbank mit Beispieldaten für Todos.
+4. Schreibe deine Routes, Controller und Models so, dass die Todos durch einen GET Request abgegriffen werden können.
+5. Starte den Server. Eventuell musst du dafür den Port ändern. https://parzibyte.me/blog/en/2019/06/21/change-express-generator-app-port/
+6. Du musst wahrscheinlich auch noch CORS zulassen. https://dzone.com/articles/cors-in-node
+7. In der React Schreibe deinen Axios Request um, dass die Daten nicht mehr aus jsonplaceholder, sondern aus dem Backend kommen.
+8. Implementiere jetzt die anderen HTTP Methoden.
