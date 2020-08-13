@@ -10,7 +10,7 @@ exports.getTasks = async (req, res, next) => {
 // 2
 exports.getTask = async (req, res, next) => {
 	try {
-		const task = await Task.findById(req.params.id);
+		const task = await Task.find();
 		if (!task) throw new createError.NotFound();
 		res.status(200).send(task);
 	} catch (e) {
