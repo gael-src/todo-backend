@@ -33,7 +33,7 @@ module.exports = mongoose.model("Task", TaskSchema);
 //         },
 //         {
 //             id: uuidv4(),
-//             title: "Make",
+//             title: "Make a to-do",
 //             completed: false,
 //         },
 //     ],
