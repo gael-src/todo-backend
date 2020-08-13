@@ -17,7 +17,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-mongoose.connect("mongodb://localhost:27017/tasks", {
+// CORS
+app.use(cors());
+
+mongoose.connect("mongodb://localhost:27017/Tasks", {
 	useNewUrlParser: true,
 	useCreateIndex: true,
 	useUnifiedTopology: true,
@@ -28,9 +31,6 @@ app.use("/users", usersRouter);
 app.use("/tasks", tasksRouter);
 
 // CORS
-
-app.use(cors());
-
 app.get("/products/:id", function (req, res, next) {
 	res.json({ msg: "This is CORS-enabled for all origins!" });
 });
