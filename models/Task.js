@@ -43,7 +43,7 @@ module.exports = mongoose.model("Task", TaskSchema);
 //     ],
 // };
 
-db.tasks.insert({
-	title: "Read React Doc 34",
-	completed: false,
-});
+// db.tasks.insert({
+// 	title: "Read React Doc 34",
+// 	completed: false,
+// });
