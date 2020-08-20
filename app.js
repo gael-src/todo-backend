@@ -27,7 +27,7 @@ app.use(function (req, res, next) {
 	next();
 });
 
-// Task CAPITALISED ON MONGO-DB
+// TASK FIRST CHARACTER IS UPPERCASE ON MONGO-DB
 mongoose.connect("mongodb://localhost:27017/Tasks", {
 	useNewUrlParser: true,
 	useCreateIndex: true,
