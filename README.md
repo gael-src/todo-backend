@@ -2,15 +2,15 @@
 
 </br>
 
-## Frontend Repository:
+### Frontend Repository:
 
 https://github.com/gael-src/todo-frontend
 
-### Frontend Deploy GH-Page:
+#### Frontend Deploy GH-Page:
 
 https://gael-src.github.io/todo-frontend/
 
-## Backend Repository:
+### Backend Repository:
 
 https://github.com/gael-src/todo-backend
 
@@ -32,7 +32,7 @@ commands:
 
 </br>
 
-## Exercise:
+### Exercise:
 
 Wir bauen ein Backend für die Todos React App. Wenn du dir unsicher bist was du geneau in den einzelnen Schritten machen musst, dann guck nochmal in die Music Rating Aufgaben 1 und 2.
 
