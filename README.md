@@ -1,10 +1,38 @@
 # todo-backend
 
+</br>
+
+## Frontend Repository:
+
+https://github.com/gael-src/todo-frontend
+
+### Frontend Deploy GH-Page:
+
+https://gael-src.github.io/todo-frontend/
+
+## Backend Repository:
+
+https://github.com/gael-src/todo-backend
+
+</br>
+
 commands:
 
-> sudo mongod --port 27018
+> \$ sudo mongod --port 27018
 
-> PORT=3002 npm start
+> \$ npm start
+
+(If port 3000 doesn't work try:)
+
+> \$ PORT=3002 npm start
+
+</br>
+
+</br>
+
+</br>
+
+## Exercise:
 
 Wir bauen ein Backend für die Todos React App. Wenn du dir unsicher bist was du geneau in den einzelnen Schritten machen musst, dann guck nochmal in die Music Rating Aufgaben 1 und 2.
 
