@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const TaskSchema = new Schema(
+const taskSchema = new Schema(
 	{
 		title: {
 			type: String,
@@ -9,23 +9,15 @@ const TaskSchema = new Schema(
 		},
 		completed: {
 			type: Boolean,
-			default: false,
+			required: false,
 		},
-		// artist: {
-		// 	type: String,
-		// 	required: true,
-		// },
-		// rating: {
-		// 	type: Number,
-		// 	required: false,
-		// },
+	},
+	{
+		versionKey: false,
 	}
-	// {
-	// 	versionKey: false,
-	// }
 );
 
-module.exports = mongoose.model("Task", TaskSchema);
+module.exports = mongoose.model("task", taskSchema);
 
 // REACT STATE
 // this.state = {
@@ -37,13 +29,14 @@ module.exports = mongoose.model("Task", TaskSchema);
 //         },
 //         {
 //             id: uuidv4(),
-//             title: "Make a to-do",
+//             title: "Make",
 //             completed: false,
 //         },
 //     ],
 // };
 
-// db.Tasks.insert({
-// 	title: "Read React Doc 34",
-// 	completed: false,
-// });
+// DB EXAMPLE:
+
+// db.tasks.insert({title: "Make To-Do", completed: false });
+
+// db.tasks.insert({ id: uuidv4(), title: "Make To-Do", completed: false });
